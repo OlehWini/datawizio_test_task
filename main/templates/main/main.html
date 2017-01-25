@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="user_inf">
+        <p>User name: {{ user_name }}</p>
+        <p>Date from: {{ date_from }}</p>
+        <p>Date to: {{ date_to }}</p>
+    </div>
+{% for shop in all_shops%}
+    <p>{{  shop }} </p>
+{% endfor %}
+
+</body>
+</html>
